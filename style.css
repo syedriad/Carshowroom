@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* --------------------- NAVIGATION BARR---------------------- */
+
+#navbar{
+    position: sticky;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+div.logo img{
+    /* width: 80px; */
+    height: 58px;
+    border-radius: 50%;
+    margin: 3px 30px;
+}
+#navbar{
+    display: flex;
+}
+#navbar ul{
+    display: flex;
+    margin-top: 25px;
+}
+#navbar a{
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+    margin: 0px 12px;
+    border-radius: 40px;
+    font-size: 1.1rem;
+
+}
+#navbar li{
+    list-style: none;
+}
+#navbar a:hover{
+    background-color: black;
+}
+
+/* -----------------NAVIGATION BAR ENDED------------------------------ */
+
+
+/* -----------------MAIN SECTION------------------------------ */
+#section::before{
+    content: "";
+    position: absolute;
+    background: url("images/home.jpg") no-repeat center center/cover;
+    /* background-size: contain; */
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;   
+    top: 0px;
+}
+#section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 300px;
+}
+#section .pol{
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+}
+#section h1{
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: cursive;
+}
+#section .btn{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 9px;
+    background-color:rgb(55, 55, 55);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*  --------------STOCKS---------------------------------------- */
+
+
+
+#stocks {
+    margin: 320px 13px 20px 13px;
+    /* flex-wrap: wrap;     */
+}
+#stocks .lord{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 29px;
+
+}
+#stocks h2{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+}
+.lord div{
+    border: 2px solid;
+    border-radius: 1.5rem;
+    /* /* width: 100px; */
+    /* height: 460px; */
+    /* display: block; */
+    /* margin: auto; */
+    background-color: rgb(248, 239, 230);
+}
+.lord img{
+    height: 190px;
+    margin: auto;
+    display: block;
+}
+.lord p{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 29px 2px 7px 2px;
+}
+#stocks .lord h3{
+    text-align: center;
+}
+#stocks .btnnn{
+    border: 2px solid black;
+    padding: 7px;
+    margin: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.lord div:hover{
+    background-color:rgb(232, 225, 225);
+    color :black; 
+    border: 2px solid black;
+}
+
+/* -------------------CONTACT US----------------------- */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('images/ghaddari.jpg') no-repeat ;
+    background-size: contain;
+    position: absolute;
+    z-index: -1;
+    height: 647px;
+    width: 1263px;
+    opacity: 0.5;
+    /* margin-bottom: 100px; */
+}
+#contact h2{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin: 10px;
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+footer{
+    margin-top: 170px;
+    text-align: center;
+    padding: 5px;
+    /* color: white; */
+    position: relative;
+    background-color: black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
